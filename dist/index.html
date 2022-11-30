@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="bundle.js" defer></script>
+</head>
+<body>
+
+
+    <div class="content-container">
+    
+        <div class="sidebar-window">
+
+            <h1 class="sidebar-title">Projects</h1>
+            <div class="project-menu">
+            </div>
+            <p class="add-project">+ New Project</p>
+
+            <form class="add-project-input" onsubmit="return false">
+                <input type="text" placeholder="Project Name" id="project-title-input">
+                <button class="add-project-button">Add Project</button>
+            </form>
+
+        </div>
+
+        <div class="task-window">
+
+            <div class="Tasks-title">
+                <h1>Tasks</h1> 
+                <div class="new-task-button">+ New Task</div>
+            </div>
+
+            <form class="new-task-input" onsubmit="return false">
+                <input type="text" id="task-title-input"placeholder="Task Title">
+                <input type="date" id="task-date-input" placeholder="Task Due Date">
+                <div class="select-project-button">
+                    <p class="selected-project">Select Project</p> 
+                    <div class="project-dropdown">
+                        <a class="project-option">Project 1</a>
+                        <a class="project-option">Project 2</a>
+                    </div>
+                </div>
+                
+                <button class="add-task-button">Add New</button>
+            </form>
+
+            <div class="all-tasks">
+
+                <div class="task-container">
+                    <div class="done-button"></div>
+                    <div class="task-info">
+                        <p>Set up to-do-list</p>
+                        <p class="task-date">date</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
